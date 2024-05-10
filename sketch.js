@@ -1,6 +1,6 @@
 const width = 600
 const height = 600
-const size = 20
+const size = 10
 
 let time = 0
 let grid
