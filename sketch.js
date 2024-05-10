@@ -1,6 +1,6 @@
 const width = 600
 const height = 600
-const size = 10
+const size = 15
 
 let time = 0
 let grid
@@ -27,11 +27,19 @@ function draw() {
   }
 }
 
+function play_pause() {
+  playing ^= true
+}
+
+function reset() {
+  grid.clear()
+}
+
 function keyPressed() {
   if (key == ' ') {
-    playing ^= true
+    play_pause()
   } else if (key == 'r') {
-    grid.clear()
+    reset()
   }
 }
 
